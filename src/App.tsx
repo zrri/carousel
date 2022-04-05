@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Carousel from "./components/carousel";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div className="App" >
+    <Carousel data={[
+      { img: 'https://t7.baidu.com/it/u=3435942975,1552946865&fm=193&f=GIF' },
+      { img: 'https://t7.baidu.com/it/u=727460147,2222092211&fm=193&f=GIF' },
+      { img: 'https://t7.baidu.com/it/u=2511982910,2454873241&fm=193&f=GIF' },
+    ]} delay={3000} />
+  </div>;
 }
 
 export default App;
